@@ -1,7 +1,7 @@
  
-## Is This a Stupid Question? ##
+# Is This a Stupid Question? #
 
-# For the person who wants to ask the right questions.#
+### For the person who wants to ask the right questions.###
 
 
 ## Summary ##
