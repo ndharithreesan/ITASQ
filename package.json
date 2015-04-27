@@ -1,0 +1,24 @@
+{
+  "name": "ITASQ",
+  "version": "1.0.0",
+  "description": "### For the person who wants to ask the right questions.###",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ndharithreesan/ITASQ.git"
+  },
+  "author": "Nimi Dharithreesan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ndharithreesan/ITASQ/issues"
+  },
+  "homepage": "https://github.com/ndharithreesan/ITASQ",
+  "dependencies": {
+    "express": "^4.12.3",
+    "mocha": "^2.2.4",
+    "node-bing-api": "^1.2.0"
+  }
+}
