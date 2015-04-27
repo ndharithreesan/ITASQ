@@ -6,8 +6,8 @@ angular.module('itasq.search', [])
     $scope.answer = '';
     $scope.results = [];
 
-    $scope.ask = function(question){
-      Search.askQuestion(question)
+    $scope.ask = function(){
+      Search.askQuestion($scope.question)
         .then(function(res){
           // TODO: show answers 
           console.log(res)

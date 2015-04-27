@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/ndharithreesan/ITASQ",
   "dependencies": {
+    "body-parser": "^1.12.3",
     "express": "^4.12.3",
     "mocha": "^2.2.4",
+    "mongoose": "^4.0.2",
     "node-bing-api": "^1.2.0"
   }
 }

@@ -1,0 +1,9 @@
+<div id = 'search'>
+<form name= 'searchForm' novalidate ng-submit = "searchForm.$valid && ask(); searchText = ''">
+<input 
+  type = 'text'
+  name = 'searchText'
+  ng-model = 'question'
+  >
+  <button type = 'submit'>Ask</button>
+</form>
