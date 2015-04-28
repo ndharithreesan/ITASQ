@@ -11,8 +11,9 @@ angular.module('itasq', [
       templateUrl: 'app/search/search.html',
       controller: 'SearchController'
     })
-    .otherwise({
-      // TODO: redirect to user login
-      redirectTo : '/search'
+    .when('/', {
+      redirectTo: '/search'
     })
+
+    console.log('successfully completed config in app.js');
 })
