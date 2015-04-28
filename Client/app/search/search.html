@@ -1,5 +1,5 @@
 <div id = 'search'>
-<form name= 'searchForm' novalidate ng-submit = "searchForm.$valid && ask(); question = ''">
+<form class = 'searchForm' name= 'searchForm' novalidate ng-submit = "searchForm.$valid && ask(); question = ''">
 <input 
   type = 'text'
   name = 'searchText'
@@ -11,7 +11,7 @@
 
  <div class="table-responsive">
     <table class = "table table-striped">
-      <tr ng-repeat="link in results">
+      <tr ng-repeat="link in results" >
 
         <td class='first'>
         <a href= 'http://{{ link.DisplayUrl }}' target= '_blank'>{{link.Title}}</a>

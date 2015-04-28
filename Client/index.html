@@ -4,10 +4,22 @@
     <meta charset = 'utf 8' />
     <title>Is This a Stupid Question?</title>
     <!-- TODO: insert stylesheets here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <h1>Is This a Stupid Question?</h1>
+    
+    <ul class = 'nav nav-justified'>
+      <li>
+        <a href = '#signin'> Login <i class="fa fa-sign-in"></i></a>
+      </li>
+      <li>
+        <a href = '#signup'> Signup <i class="fa fa-user-plus"></i></a>
+      </li>
+      <li>
+      </ul>
     <!-- TODO: add a nav bar for users to login -->
     <div ng-view></div>
 
@@ -15,6 +27,8 @@
     <script src="lib/angular-route/angular-route.js"></script>
     <script src = "app/search/search.js"></script>
     <script src = "app/services/services.js"></script>
+    <script src = "app/users/auth.js"></script>
+    <script src = "app/users/signup.html"></script>
     <script src = "app/app.js"></script>
   </body>
 </html>

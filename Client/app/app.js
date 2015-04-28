@@ -1,6 +1,7 @@
 angular.module('itasq', [
 'itasq.services',
 'itasq.search',
+'itasq.auth',
 'ngRoute'
 ])
 
@@ -10,6 +11,10 @@ angular.module('itasq', [
     .when(  '/search', {
       templateUrl: 'app/search/search.html',
       controller: 'SearchController'
+    })
+    .when('/signup', {
+      templateUrl: 'app/users/signup.html',
+      controller: 'AuthController'
     })
     .when('/', {
       redirectTo: '/search'

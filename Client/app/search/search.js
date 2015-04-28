@@ -6,9 +6,15 @@ angular.module('itasq.search', [])
     $scope.results = [];
 
     $scope.ask = function(){
+
+      //TODO: create a list of veto words and do a search through that to filter questions at the client end
+      if($scope.question.indexOf('women should') > -1){
+        return $scope.answer = "Stop right there. Don't ask that, stupid"
+      }
+
       Search.askQuestion($scope.question)
         .then(function(res){
-          // TODO: show answers 
+          $scope.results = [];
           var results = res.data;
           console.log('ANSWER', res)
           if(results.isValid === false){

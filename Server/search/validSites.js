@@ -10,7 +10,17 @@ var sites = [
 '.edu',
 'livestrong',
 'wisegeek',
-'.org'
+'.org',
+'biomedcentral',
+'businessinsider',
+'time.com',
+'urbandictionary',
+'nytimes',
+'gizmodo',
+'bloomberg',
+'msnbc',
+'washingtonpost',
+'cnn'
 ]
 
 module.exports= sites;
