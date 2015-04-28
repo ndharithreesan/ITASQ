@@ -21,6 +21,7 @@
     "express": "^4.12.3",
     "mocha": "^2.2.4",
     "mongoose": "^4.0.2",
-    "node-bing-api": "^1.2.0"
+    "node-bing-api": "^1.2.0",
+    "underscore": "^1.8.3"
   }
 }
