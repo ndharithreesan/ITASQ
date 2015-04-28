@@ -11,7 +11,7 @@ app.use (cookieParser());
 mongoose.connect("mongodb://localhost/itasq");
 console.log('connected to mongoose')
 
-app.use(session({ secret: 'ilovescotchscotchyscotchscotch' })); // session secret
+app.use(session({ secret: 'donttellanyone' })); // session secret
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash()); 

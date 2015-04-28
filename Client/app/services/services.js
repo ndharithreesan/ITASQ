@@ -16,3 +16,34 @@ angular.module('itasq.services', [])
     askQuestion: askQuestion
   }
 })
+
+.factory('Auth', function ($http) {
+
+  var signin = function (user) {
+    return $http({
+      method: 'POST',
+      url: '/Server/users/signin',
+      data: user
+    })
+    .then(function () {
+      return
+    })
+  };
+
+  var signup = function (user) {
+    return $http({
+      method: 'POST',
+      url: '/Server/users/signup',
+      data: user
+    })
+    .then(function (resp) {
+      console.log('response!', resp)
+      return
+    });
+  };
+
+  return {
+    signin: signin,
+    signup: signup,
+  }
+});

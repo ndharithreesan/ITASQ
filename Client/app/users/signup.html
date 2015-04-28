@@ -1,29 +1,20 @@
-<div id='signup'>
+<div>
   <h1>signup</h1>
-  <form name="signupForm" novalidate ng-submit="signupForm.$valid && signup(); user = {}
-  ">
+  <form name="signupForm" novalidate ng-submit="signupForm.$valid && signup(); user = {}">
     <input
     type='text'
     name= 'username'
     ng-model='user.username'
-    ng-minlength = '4'
-    ng-maxlength = '20'
+
     >
     <input
     type="password"
     name= "password"
     ng-model='user.password'
-    ng-minlength = '10'
-    ng-maxlength = '30'
-    ng-pattern = '/^(?=.*[a-z])(?=.*\d)(?=.*[A-Z]).{10,30}$/'
+   
     >
     <button type= 'submit'>signup</button>
-    <span ng-show="signupForm.username.$error.minlength">Your username must be at least 4 characters!</span>
-    <span ng-show="signupForm.username.$error.maxlength">Your username cannot be more than 20 characters!</span>
-    <span ng-show="signupForm.password.$error.minlength">Your password must  be at least 10 characters!</span>
-    <span ng-show="signupForm.password.$error.maxlength">Your password cannot be more than 30 characters!</span>
-    <span ng-show="signupForm.password.$error.pattern">Your password must include at least one uppercase letter, one lowercase letter, and one number!</span>
-
   </form>
+
   <a href="#/signin">Already have an account? <strong>Signin</strong> ...</a>
 </div>

@@ -10,7 +10,7 @@ module.exports = function(app, express, passport){
   app.use(express.static(__dirname + '/../../Client'));
 
   app.use('/Server/search', searchRouter);
-  app.use('/Server/user', userRouter)
+  app.use('/Server/users', userRouter)
   
   require('../users/passportConfig.js')(passport)
   require('../search/searchRoutes.js')(searchRouter);

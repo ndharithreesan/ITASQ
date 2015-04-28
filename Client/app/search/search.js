@@ -1,7 +1,7 @@
 angular.module('itasq.search', [])
 
 .controller('SearchController', ['$scope', 'Search',  
-  function($scope, Search) {
+  function ($scope, Search) {
 
     $scope.results = [];
 

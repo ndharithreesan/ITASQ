@@ -1,6 +1,6 @@
-angular.module('itasq.auth', []);
+angular.module('itasq.auth', [])
 
-controller('AuthController', function ($scope, $window, $location, Auth) {
+.controller('AuthController', ['$scope', '$window', '$location', 'Auth', function ($scope, $window, $location, Auth) {
   $scope.user = {};
 
   $scope.signin = function () {
@@ -23,4 +23,4 @@ controller('AuthController', function ($scope, $window, $location, Auth) {
         console.error(error);
       });
   };
-});
+}]);
