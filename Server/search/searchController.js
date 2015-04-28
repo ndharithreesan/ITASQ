@@ -32,11 +32,5 @@ module.exports = {
     {
       top: 30
     });
-    },
-
-    fetchLink: function(req, res, next){
-      var url = req.url;
-      console.log('URL', url)
-      res.redirect('http://' + url)
     }
   }

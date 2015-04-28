@@ -16,6 +16,10 @@ angular.module('itasq', [
       templateUrl: 'app/users/signup.html',
       controller: 'AuthController'
     })
+    .when('/login', {
+      templateUrl: 'app/users/login.html',
+      controller: 'AuthController'
+    })
     .when('/', {
       redirectTo: '/search'
     })

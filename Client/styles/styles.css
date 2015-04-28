@@ -1,3 +1,15 @@
 .searchForm {
    margin: 10px;
 }
+
+.fa-facebook {
+  background:#3b5998;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 25px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}

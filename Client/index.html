@@ -5,6 +5,7 @@
     <title>Is This a Stupid Question?</title>
     <!-- TODO: insert stylesheets here -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -12,13 +13,18 @@
     <h1>Is This a Stupid Question?</h1>
     
     <ul class = 'nav nav-justified'>
+    <li>
+      <a href = '#search'> Home </a>
+    </li>
       <li>
-        <a href = '#signin'> Login <i class="fa fa-sign-in"></i></a>
+        <a href = '#login'> Login <i class="fa fa-sign-in"></i></a>
       </li>
       <li>
         <a href = '#signup'> Signup <i class="fa fa-user-plus"></i></a>
       </li>
       <li>
+        <a href="/Server/users/logout">Logout</a>
+      </li>
       </ul>
     <!-- TODO: add a nav bar for users to login -->
     <div ng-view></div>

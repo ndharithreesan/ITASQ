@@ -18,6 +18,7 @@ node_modules/
 db/
 Client/lib
 Server/search/bingKeys.js
+Server/thirdPartyconfig.js
 
 # Floobitit s
 .floo

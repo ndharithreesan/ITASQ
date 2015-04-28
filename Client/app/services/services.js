@@ -19,10 +19,10 @@ angular.module('itasq.services', [])
 
 .factory('Auth', function ($http) {
 
-  var signin = function (user) {
+  var login = function (user) {
     return $http({
       method: 'POST',
-      url: '/Server/users/signin',
+      url: '/Server/users/login',
       data: user
     })
     .then(function () {
@@ -43,7 +43,7 @@ angular.module('itasq.services', [])
   };
 
   return {
-    signin: signin,
+    login: login,
     signup: signup,
   }
 });
