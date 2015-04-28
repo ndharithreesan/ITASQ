@@ -8,4 +8,19 @@
   <button type = 'submit'>Ask</button>
   <div> {{answer}}</div>
 
+
+ <div class="table-responsive">
+    <table class = "table table-striped">
+      <tr ng-repeat="link in results">
+
+        <td class='first'>
+        <a href= 'http://{{ link.DisplayUrl }}' target= '_blank'>{{link.Title}}</a>
+        <div>{{ link.Description }}</div>
+        </td>
+
+
+      </tr>
+    </table>
+  </div>
+
 </form>

@@ -15,6 +15,10 @@ angular.module('itasq.search', [])
             $scope.answer = 'YES'
           } else {
             $scope.answer = 'NO';
+            results.results.forEach(function(linkObj){
+              console.log('URL HOMIE', linkObj.DisplayUrl)
+              $scope.results.push(linkObj)
+            })
           }
         })
     }

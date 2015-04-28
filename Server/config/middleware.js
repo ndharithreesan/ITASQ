@@ -9,6 +9,7 @@ module.exports = function(app, express){
   app.use(express.static(__dirname + '/../../Client'));
 
   app.use('/Server/search', searchRouter);
+  
 
   require('../search/searchRoutes.js')(searchRouter);
   
