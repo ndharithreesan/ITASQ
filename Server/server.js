@@ -8,7 +8,9 @@ var flash = require('connect-flash')
 var app = express();
 app.use (cookieParser()); 
 
-mongoose.connect("mongodb://localhost/itasq");
+var uri = 'mongodb://MongoLab-7l:aqAlUM5jgiF.KqX8JBavwjJDuvWmP9YmuOifs_O3HBg-@ds034348.mongolab.com:34348/MongoLab-7l' | "mongodb://localhost/itasq"
+
+mongoose.connect(uri);
 console.log('connected to mongoose')
 
 app.use(session({ secret: 'donttellanyone' })); // session secret
