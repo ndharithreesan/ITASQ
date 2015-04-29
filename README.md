@@ -14,6 +14,7 @@
   > This application will use results from a web search of your question to determine whether or not that question is valid or not. If it passes our complex test, you can be assured that it is not a stupid question. If your question fails, you know not to ask it, and to refactor that stupid question into a smart one. 
 
 ## How to Get Started ##
+  > Go to http://itasq.herokuapp.com/
   > Getting started is as easy as typing in your question into the input box and clicking submit. The application will then respond with a YES or NO. If the question is not stupid (NO), the top links from the search will also show up. The user can ask as many questions as they want and their total Stupid/ Not Stupid questions will be logged. 
 
 ## Company quote ##
