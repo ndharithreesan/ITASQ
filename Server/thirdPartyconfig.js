@@ -4,7 +4,7 @@ module.exports= {
   facebookAuth: {
     clientID : process.env.FACEBOOK_CLIENTID, 
     clientSecret: process.env.FACEBOOK_CLIENTSECRET,
-    callbackURL: ip + ':' + port + '/Server/users/facebook/callback'
+    callbackURL: ip  + '/Server/users/facebook/callback'
   }
 
 
