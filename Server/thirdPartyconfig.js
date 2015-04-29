@@ -1,4 +1,4 @@
-var ip = var ip = process.env.IP || 'http://localhost';
+var ip  = process.env.IP || 'http://localhost';
 var port = process.env.PORT || 8080;
 module.exports= {
   facebookAuth: {
