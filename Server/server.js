@@ -8,8 +8,7 @@ var flash = require('connect-flash')
 var app = express();
 app.use (cookieParser()); 
 
-var uri = 'mongodb://heroku_app36349004:vfirgt9eko7docia6es2e6304l@ds031812.mongolab.com:31812/heroku_app36349004' | "mongodb://localhost/itasq"
-
+var uri = 'mongodb://heroku_app36349004:vfirgt9eko7docia6es2e6304l@ds031812.mongolab.com:31812/heroku_app36349004' 
 mongoose.connect(uri);
 console.log('connected to mongoose')
 
