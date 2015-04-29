@@ -20,7 +20,12 @@ var sites = [
 'bloomberg',
 'msnbc',
 'washingtonpost',
-'cnn'
+'cnn',
+'weather.com',
+'usno.navy',
+'.gov',
+'dailymail',
+'bbc'
 ]
 
 module.exports= sites;

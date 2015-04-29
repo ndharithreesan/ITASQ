@@ -8,7 +8,20 @@ angular.module('itasq.search', [])
     $scope.ask = function(){
 
       //TODO: create a list of veto words and do a search through that to filter questions at the client end
-      if($scope.question.indexOf('women should') > -1){
+      var count =0;
+      var total = $scope.question.split(' ').length
+      Search.list.forEach(function(keyword){
+        if($scope.question.indexOf(keyword) > -1){
+          if(keyword === 'racist' || 'sexist'){
+            count += 5;
+          } else {
+            count++
+          }
+        }
+      });
+
+      if (count/total > 0.4){
+        console.log(count/total)
         return $scope.answer = "Stop right there. Don't ask that, stupid"
       }
 

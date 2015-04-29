@@ -11,8 +11,26 @@ angular.module('itasq.services', [])
     .then(function(res){
       return res;
     })
-  }
+  };
+
+  var list = [
+    'woman',
+    'women',
+    'men',
+    'man',
+    'beat',
+    'hit',
+    'kill',
+    'child',
+    'children',
+    'allowed to',
+    'racist',
+    'sexist',
+    'wrong'
+  ];
+
   return {
+    list: list,
     askQuestion: askQuestion
   }
 })
